@@ -1,0 +1,30 @@
+﻿__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+*.key
+*.pem
+data/
+input/
+outputs/
+
+# Competition data — do not publish
+train.csv
+test.csv
+sample_submission.csv
+*.tif
+*.tiff
+
+# Generated dataset-derived artifacts
+aeroblind_image_features.csv
+aeroblind_experiment08_oof_predictions.csv
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Original research notebooks contain saved Kaggle outputs
+/AeroBlind_AI_Research.ipynb
+/notebooks/AeroBlind_AI_Research.ipynb
