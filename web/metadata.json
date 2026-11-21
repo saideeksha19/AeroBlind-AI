@@ -1,0 +1,6 @@
+{
+  "name": "AEROBLIND AI",
+  "description": "Seeing the Invisible: Multimodal AI for Atmospheric Pollution Reconstruction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

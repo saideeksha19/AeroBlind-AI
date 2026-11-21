@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, ui-serif, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #f7f7f3;
+    color: #101d2b;
+    font-family: var(--font-sans);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  h1, h2 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Scientific instrument hairline slider for light observatory theme */
+input[type="range"].aero-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].aero-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #dce0d8;
+}
+
+input[type="range"].aero-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  margin-top: -6px;
+  border-radius: 9999px;
+  background: #147d80;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(16, 29, 43, 0.22);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+input[type="range"].aero-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.12);
+  background: #0f6568;
+}
+
+input[type="range"].aero-slider:focus-visible {
+  outline: none;
+}
+
+input[type="range"].aero-slider:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(20, 125, 128, 0.35);
+}
+
+input[type="range"].aero-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #dce0d8;
+}
+
+input[type="range"].aero-slider::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  background: #147d80;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(16, 29, 43, 0.22);
+}
+
